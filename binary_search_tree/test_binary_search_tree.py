@@ -93,7 +93,6 @@ class BinarySearchTreeTests(unittest.TestCase):
         output = sys.stdout.getvalue()
         self.assertTrue(output == "1\n8\n5\n7\n6\n3\n4\n2\n" or
                         output == "1\n8\n5\n3\n2\n4\n7\n6\n")
-
         sys.stdout = io.StringIO()
         self.bst.pre_order_dft()
         output = sys.stdout.getvalue()

@@ -59,7 +59,7 @@ class DoublyLinkedList:
             value = self.head.get_value()
             self.head = self.head.next
             self.head.prev = None
-            self.length += 1
+            self.length -= 1
             return value
     """
     Wraps the given value in a ListNode and inserts it 
